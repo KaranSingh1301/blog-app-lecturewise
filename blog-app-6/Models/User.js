@@ -89,7 +89,6 @@ const User = class {
   static verifyUserId({ userId }) {
     return new Promise(async (resolve, reject) => {
       try {
-        console.log("here", userId);
         if (!ObjectId.isValid(userId)) {
           reject("Invalid userId");
         }
